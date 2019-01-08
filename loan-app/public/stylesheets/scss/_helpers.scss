@@ -1,0 +1,52 @@
+$spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+$font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+@for $i from 1 through 100{
+  .f-s-#{$i}{
+    font-size: #{$i}px !important;
+  }
+
+  @if $i % 5 == 0{
+    .w-#{$i}{
+      width: #{$i}% !important;
+    }
+  }
+}
+
+@for $i from 0 through 150{
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$i} {
+      margin-#{$side}: #{$i}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$i} {
+      padding-#{$side}: #{$i}px !important;
+    }
+  }
+  .m-#{$i}{
+    margin: #{$i}px !important;
+  }
+
+  .p-#{$i}{
+    padding: #{$i}px !important;
+  }
+}
+
+@each $font-weight in $font-weights{
+  .f-w-#{$font-weight}{
+    font-weight: #{$font-weight} !important;
+  }
+}

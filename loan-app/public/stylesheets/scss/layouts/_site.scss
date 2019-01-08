@@ -1,0 +1,58 @@
+.sites-block{
+
+}
+
+.site-item{
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.site-item .site-item-title{
+  margin-top:  -8px;
+  font-size:  15px;
+  margin-bottom:  0;
+  padding-bottom:  0;
+}
+
+.site-item .separator{
+  margin-top: 5px;
+  margin-bottom: 0;
+  width: 100% !important;
+}
+
+.site-item p{
+  padding: 0;
+  margin: 0;
+}
+.site-label{
+
+}
+
+.site-techonology-icon{
+  position: absolute;
+  right: 18px;
+  top: 32px;
+  width: 30px;
+}
+
+.site-active{
+  border-left: 2px solid green;
+}
+
+.site-down{
+  border-left: 2px solid #d32f2f;
+}
+
+.site-filter-btn{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.search-results-box{
+  background: #e4e4e4;
+  width: 120%;
+  margin-left: -10%;
+  padding: 5px 0 0 10%;
+  color: #000;
+}

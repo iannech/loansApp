@@ -1,0 +1,162 @@
+/*ALERTS*/
+.alert-warning{
+  color: #0f0f10 !important;
+}
+
+.select2-container--default .select2-selection--single{
+  border-radius: 0 !important;
+  border-color: #e7e7e7;
+  height: 40px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.select2.select2-container.select2-container--default{
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  margin-top: 7px;
+  margin-right: 7px;
+}
+
+.btn-success {
+  background: #39b54a;
+  border: 1px solid #39b54a;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(40, 190, 189, 0.14), 0 3px 1px -2px rgba(40, 190, 189, 0.2), 0 1px 5px 0 rgba(40, 190, 189, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(40, 190, 189, 0.14), 0 3px 1px -2px rgba(40, 190, 189, 0.2), 0 1px 5px 0 rgba(40, 190, 189, 0.12);
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.text-secondary{
+  color: #39b54a !important;
+}
+
+
+//bootstrap Checkbox override
+.checkbox label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.checkbox .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #39b54a;
+  border-radius: .25em;
+  width: 1.3em;
+  height: 1.3em;
+  float: left;
+  margin-right: .5em;
+}
+
+.checkbox .cr .cr-icon {
+  position: absolute;
+  font-size: .8em;
+  line-height: 0;
+  top: 50%;
+  left: 15%;
+}
+
+.checkbox label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label input[type="checkbox"]+.cr>.cr-icon {
+  opacity: 0;
+}
+
+.checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+  opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled+.cr {
+  opacity: .5;
+}
+
+.label-form{
+  color: #222;
+  font-size: 14px;
+  margin-left: -10px;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="radio"] {
+  opacity:0.011;
+  z-index:100;
+}
+
+.form-group input[type="radio"]:checked + .label-nokia {
+  background: #2D60EC;
+  color: #fff;
+}
+
+.form-group input[type="radio"]:checked + .label-4g,
+.form-group input[type="radio"]:checked + .label-3g,
+.form-group input[type="radio"]:checked + .label-2g
+{
+  background: #2D60EC;
+  color: #fff;
+}
+
+.form-group input[type="radio"]:checked + .label-huawei {
+  background: #B23636;
+  color: #fff;
+}
+
+.form-group .label-radio {
+  padding: 5px 0;
+  width: calc(100% - 2px);
+  cursor: pointer;
+  text-align: center;
+  z-index: 90;
+  display:inline-block;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.form-group .label-nokia,
+.form-group .label-4g,
+.form-group .label-3g,
+.form-group .label-2g
+{
+  border: 1px solid #2D60EC;
+}
+
+.form-group .label-huawei{
+  border: 1px solid #B23636;
+}
+
+.banner{
+  width: 100%;
+  height: 46px;
+  background: #39b54a;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.apply{
+  float: right;
+  margin-right: 16px;
+  line-height: 46px;
+}
+
+.close{
+  color: #fff;
+  font-size: 21px;
+  padding: 16px;
+  line-height: 46px;
+}
+
+.numberCircle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  background: #f0f1f3;
+  color: #0096ff;
+  text-align: center;
+  font: 16px Arial, sans-serif;
+}

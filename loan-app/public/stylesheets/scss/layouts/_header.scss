@@ -1,0 +1,96 @@
+.drawer-nav-icon{
+  width: 22px;
+  padding-right: 10px;
+}
+
+.drawer-header{
+  height: 200px;
+}
+
+.mdl-layout__drawer{
+  border-right: none;
+}
+
+.account-logo{
+  position: absolute;
+  margin-top: 82px;
+  color: #fff;
+  font-size: 90px;
+  padding-left: 10px;
+}
+.account-name{
+  position: absolute;
+  color: #fff;
+  top: 170px;
+  padding: 0 16px;
+}
+
+.layout-header--no-shadow  .mdl-layout__header{
+  //box-shadow: none !important;
+}
+
+.layout-header--no-shadow .mdl-layout__drawer-button,
+.layout-header--no-shadow  .mdl-layout__header{
+  color: #fff;
+}
+
+.upper-block{
+  height: 230px;
+  //background-color: rgb(76,175,80);
+}
+
+.navigation-grid{
+  width: 100%;
+  float: left;
+}
+
+.navigation-item-grid{
+  float: left;
+  position: relative;
+  width: 33%;
+}
+
+.navigation-item-grid:before {
+  content : "";
+  position: absolute;
+  right    : 0;
+  bottom  : 0;
+  height  : 50%;
+  width   : 1px;
+  border-right:1px solid #e4e4e4;
+}
+
+.navigation-card{
+  margin: -100px auto;
+}
+
+.separator{
+  float: left;
+  width: calc(100% - 32px);
+}
+
+.nav-profile-picture{
+  position: absolute;
+  margin-top: 42px;
+  color: #fff;
+  font-size: 70px;
+  padding-left: 10px;
+}
+
+.gradient-270-grey{
+  background: -moz-linear-gradient(270deg, rgba(248,248,248,1) 0%, rgba(237,237,237,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(248,248,248,1)), color-stop(100%, rgba(237,237,237,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(248,248,248,1) 0%, rgba(237,237,237,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(248,248,248,1) 0%, rgba(237,237,237,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(248,248,248,1) 0%, rgba(237,237,237,1) 100%); /* ie10+ */
+  background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(237,237,237,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8F8F8', endColorstr='#EDEDED',GradientType=0 ); /* ie6-9 */
+}
+
+.nav-profile-data{
+  position: absolute;
+  z-index: 2;
+  padding-top: 50px;
+  padding-left: 80px;
+  color: #fff;
+}
