@@ -41,5 +41,10 @@ public class CreditStatus implements Serializable{
 	public void setScore(String score) {
 		this.score = score;
 	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
 	
 }

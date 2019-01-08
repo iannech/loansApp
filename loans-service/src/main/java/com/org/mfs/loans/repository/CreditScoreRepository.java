@@ -12,6 +12,6 @@ import com.org.mfs.loans.model.CreditStatus;
 @Repository
 public interface CreditScoreRepository extends JpaRepository<CreditStatus, Integer>{
 
-	@Query("SELECT s FROM CreditStatus s WHERE s.customerId = :customerId")
+	@Query("SELECT s FROM CreditStatus s WHERE s.customerId =:customerId")
 	Optional<CreditStatus> findCreditScoreByCustomerId(@Param("customerId") int customerId);
 }
