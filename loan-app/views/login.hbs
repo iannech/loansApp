@@ -1,0 +1,39 @@
+<div content="login-content">
+    
+    <div class="login-bottom-container" style="margin-top: 200px;">
+        <div class="mdl-card mdl-shadow--2dp login-form-holder">
+            <div class="mdl-layout__content mat-typography">
+
+                <h2 class="mdl-typography--text-center">LOGIN FORM</h2>
+                <div class="error-box" style="padding: 0 16px; height: 30px; font-size: 14px; color: #0b046d; margin-top: -15px;">
+                    {{message}}
+                </div>
+                <form class="p-l-16 p-r-16 p-b-50" method="post" action="/login">
+                    <div class="input-section mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="username" name="username" autocomplete="false" required>
+                        <label class="mdl-textfield__label" for="username" name="username">User ID</label>
+                    </div>
+                    <!--OTP input for 2 factor auth-->
+                    <div class="input-section mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="password" id="password" name="password" autocomplete="false" required>
+                        <label class="mdl-textfield__label" for="password" name="password">Password</label>
+                    </div>
+                    <div style="position: relative">
+                        <button class="p-8 login-submit mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent" style="color: #0b046d"
+                                type="submit" id="post-btn">LOGIN
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+           <!-- <img src="/images/safaricom-strip.png" style="position: fixed; bottom: 0; right: 0">-->
+        </div>
+    </div>
+</div>
+<script type="application/javascript">
+    $('body').css({
+        "background": "url('/images/networking_icons.png')",
+        "background-color": "#e4e4e4"
+    });
+</script>

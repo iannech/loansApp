@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+var session = require('express-session');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -13,10 +14,13 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(__dirname + '/views');
 
 app.use(logger('dev'));
 app.use(express.json());
+//app.use(session({secret:'XASDASDA'}));
+//app.use(express.cookieParser());
+//app.use(express.session({ secret: "keyboardcat" }))
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(sassMiddleware({
@@ -29,6 +33,7 @@ app.use(sassMiddleware({
     outputStyle: 'compressed',
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({ resave: true ,secret: '123456' , saveUninitialized: true}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

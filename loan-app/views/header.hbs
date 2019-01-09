@@ -1,0 +1,48 @@
+<header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Loan App</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <!--<nav class="mdl-navigation mdl-layout--large-screen-only">-->
+                <!--<a class="mdl-navigation__link" href="/sites/down">-->
+                    <!--<img src="/images/site-down.png" class="drawer-nav-icon">-->
+                    <!--Sites Down</a>-->
+                <!--<a class="mdl-navigation__link" href="">-->
+                    <!--<img src="/images/all-sites.png" class="drawer-nav-icon">-->
+                    <!--All Sites</a>-->
+                <!--<a class="mdl-navigation__link" href="">-->
+                    <!--<img src="/images/my-account.png" class="drawer-nav-icon">-->
+                    <!--My Account</a>-->
+            <!--</nav>-->
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <div class="drawer-header gradient-270-dark-green">
+            <div class="account">
+                <i class="material-icons account-logo f-s-70">
+                    account_circle
+                </i><br>
+                <span class="account-name">{{username}}</span>
+            </div>
+        </div>
+
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="/sites/down">
+                Loan History</a>
+            <a class="mdl-navigation__link" href="">
+                Apply Loan</a>
+            <a class="mdl-navigation__link" href="/">
+                My Account</a>
+
+            <a class="mdl-navigation__link logout-btn" href=""
+               style="width: calc(100% - 32px); border-top: 1px solid #e4e4e4;">
+                LOGOUT</a>
+            <form class="logout-form" style="display: none" method="post" action="/logout">
+                <input name="logout-data">
+            </form>
+        </nav>
+    </div>
+
+

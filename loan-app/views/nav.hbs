@@ -1,0 +1,62 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header layout-header--no-shadow">
+    {{>header}}
+    <main class="mdl-layout__content mat-typography">
+    <div class="upper-block gradient-270-dark-green">
+        <div class="p-l-16 p-r-16">
+            <div class="">
+                <div style="float: left;">
+                <i class="material-icons nav-profile-picture f-s-70">
+                    account_circle
+                </i>
+                </div>
+                <div style="float: left;">
+                    <p class="nav-profile-data">
+                        <span>{{username}}</span><br>
+                        <span></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-block">
+        <div class="mdl-card mdl-shadow--2dp navigation-card">
+            <div class="mdl-layout__content mat-typography">
+                <div class="navigation-grid mdl-typography--text-center">
+                    <div class="navigation-item-grid">
+                        <div style="margin: auto">
+                            <a class="mdl-navigation__link" href="/sites/down">
+                                <img src="/images/site-down.png" style="width: 30px"
+                                     class="p-t-25 p-l-25 p-r-25">
+                                <br>
+                                Loan History</a>
+                        </div>
+                    </div>
+                    <div class="navigation-item-grid">
+                        <div style="margin: auto">
+                            <a class="mdl-navigation__link" href="">
+                                <img src="/images/all-sites.png" style="width: 30px"
+                                     class="p-t-25 p-l-25 p-r-25">
+                                <br>
+                                Apply Loan</a>
+                        </div>
+                    </div>
+                    <div class="navigation-item-grid">
+                        <div style="margin: auto">
+                            <a class="mdl-navigation__link" href="">
+                                <img src="/images/my-account.png"  style="width: 35px"
+                                     class="p-t-25 p-l-25 p-r-25">
+                                <br>
+                                My Account</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="separator m-l-16">
+                <div class="summary m-16">
+                    <h5 class="m-0 p-0">Summary</h5>
+                    <p class="m-0 p-0"><span>Sites Down: </span> <strong>{{summary}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</div>
